@@ -1,0 +1,140 @@
+
+#app {
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #F64C72;
+
+  margin-top: 60px;
+}
+body{
+    margin:0;
+    padding: 0;
+    width: 95%;
+    color: purple;
+    transition: background-color .5s linear;
+    background-color: #282828;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*Navigation*/
+nav{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1000;
+   background-color: #0C0032;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 1px;
+    padding: 2px;
+    transition: color .5s linear;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+    color: white;
+
+}
+.right li{
+  padding: 5px;
+}
+.right li:hover{
+  color:#F64C72;
+}
+li:hover{
+    color: red;
+}
+#logo li:hover{
+  color: white;
+}
+/*Main Content*/
+
+.content{
+    margin: 0 auto;
+}
+header{
+    margin-top: 100px;
+    margin-left: auto;
+    width: 95%;
+    text-align: center;
+    min-height: 200px;
+}
+/*Footer*/
+
+/*IDs */
+#logo{
+    position: absolute;
+    left: 0;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.fade-enter-active, .fade-enter{
+  transition-delay: .3s;
+}
+header{
+    height: 50%;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+   margin-left: px;
+  }
+  #leftCol{
+    float: left;
+
+  }
+  #rightCol{
+    color: white;
+
+  }
+  .col{
+    width: 50%;
+    height: 200px;
+    border: 1px solid #ccc;
+
+  }
+  .row{
+    display: flex;
+    width: 95%;
+    margin-top: 100px;
+    margin-left: auto;
+  }
+  .bodyTitle{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contentBody{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .project{
+    display: inline-block;
+    height: 200px;
+    width: calc(90%/3);
+    max-width: 300px;
+    margin: 0px 10px;
+    background-color: #3500D3;
+  }
+  #homePage{
+    background-color: #0C0032;
+    position: absolute;
+    left:0;
+    right:0;
+  }
+  #projectsDisplay{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
