@@ -72,15 +72,7 @@ header{
     position: absolute;
     left: 0;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .3s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-.fade-enter-active, .fade-enter{
-  transition-delay: .3s;
-}
+
 header{
     height: 50%;
     color: white;
@@ -138,3 +130,48 @@ header{
     text-align: center;
     margin: auto;
   }
+.active{
+    color: #F64C72;
+    text-decoration: underline;
+}
+.active:hover{
+    color: white;
+}
+.contactForm{
+    margin-top: 100px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    background-color: white;
+    padding-left: 20px;
+    color: black;
+    
+}
+.contactForm h5{
+    color: #F64C72;
+}
+.contactForm textarea{
+    width: 95%;
+    height: 30%;
+}
+form{
+    border: 2px solid #ccc;;
+    
+}
+
+form:valid{
+}
+
+#project1:hover{
+    transition: transform .3s linear;
+    transform: rotate(-10deg) scale(1.1);
+}
+#project2:hover{
+    transition: transform .3s linear;
+    transform: scale(1.1);
+}
+#project3:hover{
+    transition: transform .3s linear;
+    transform: rotate(10deg) scale(1.1);
+}

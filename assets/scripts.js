@@ -13,3 +13,16 @@ document.body.style.backgroundColor = "gray";
     }
     
 }
+
+function alertUser(){
+    var nameVal = document.getElementById('contactName').value;
+    alert('Thanks ' + nameVal +"! Your message was sent!");
+}
+
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
