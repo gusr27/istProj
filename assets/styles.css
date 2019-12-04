@@ -175,3 +175,13 @@ form:valid{
     transition: transform .3s linear;
     transform: rotate(10deg) scale(1.1);
 }
+select{
+    
+    border: none;
+    background: transparent;
+    /*background-color: blue;*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+    
+}
