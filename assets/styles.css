@@ -8,6 +8,9 @@
 
   margin-top: 60px;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin:0;
     padding: 0;
@@ -19,6 +22,11 @@ body{
 a {
   text-decoration: none;
   color: inherit;
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+    
 }
 /*Navigation*/
 nav{
@@ -175,13 +183,44 @@ form:valid{
     transition: transform .3s linear;
     transform: rotate(10deg) scale(1.1);
 }
+.topMenu{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 200px;
+    background-color: #242582;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.topMenu h1{
+    margin-top: 20px;
+}
+.topMenu > div > a> i{
+    margin: 0px 5%;
+}
+.fa-laptop-code:hover, .fa-briefcase:hover, .fa-school:hover{
+    color:white;
+}
+.topMenu ~ section{
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+}
+.topMenu ~ section{
+    margin-top: 150px;
+}
+h1 + h5{
+    color:white;
+    margin-left: 15px;
+}
+/*
 select{
     
     border: none;
     background: transparent;
-    /*background-color: blue;*/
     -webkit-appearance: none;
     -moz-appearance: none;
      appearance: none;
     
-}
+}*/
