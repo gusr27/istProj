@@ -219,18 +219,69 @@ h1 + h5{
     margin-top: 20px;
     margin-left: 30px;
     width: 50%;
-    height: 200px;
+    min-height: 200px;
     background-color: #242582;
     border: 1px solid black;
     overflow: hidden;
     border-radius: 10px;
+    min-width: 290px;
+    display: flex;
+    flex-direction: column;
+}
+.projContent p a{
+    color: purple;
+}
+.projContent p{
+    font-size: .8rem;
+    text-align: center;
+    padding: 0 25px;
 }
 table{
-    border: 1px solid white;
+    margin: 10px auto;
+    vertical-align: middle;
+    border-radius: 10px; 
+    overflow: hidden;
+    color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table td,th{
+    padding: 5px;
+}
+thead{
+    background: #522B72;
+    color: white;
+}
+
+td{
+   border: none;
 }
 tr:nth-child(even) {
-  background-color: black;
+  background-color: #553D67;
+}
+
+
+tbody tr:hover{
+    opacity: .5;
+}
+td:nth-child(even){
+    text-align: right;
+}
+tbody tr:nth-child(odd) {
+  background-color: #99738E;
+ color: black;
 } 
+
+
+
+td a{
+    text-decoration: none;
+}
+td a:hover{
+    color: greenyellow;
+}
+
 /*
 select{
     
