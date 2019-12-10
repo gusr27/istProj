@@ -1,0 +1,8 @@
+json = {
+    "military":{
+        "title": "Military Ranks",
+        "image": "/images/MR.jpg",
+        "description": "An app that helps study military ranks"
+    }
+    
+}

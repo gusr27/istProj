@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" language="javascript" src="./projectData.json"></script>
+    <title></title>
+    <link rel="stylesheet" href="./styles.css"/>
+      <link  rel="stylesheet" href='./FA/css/all.min.css'/>
+      <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto+Slab&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="projectData.json"></script>
+      <script type="text/javascript" src="scripts.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+      
+  </head>
+  <body onload="showHref()">
+
+    <div id="app">
+      
+        
+         <nav>
+    <ul id="logo">
+        <li >
+         <span class="logo"><a href="../index.html">Gus Richardson</a></span>
+        </li>
+    </ul>
+    <ul class="right" >
+        <li>
+            <a href="../contact.html" >Contact</a>
+        </li>
+        <li>
+            <a href="./projects.html" class="active">Projects</a>
+        </li>
+        <li>
+            <a href="../about.html">About</a>
+        </li>
+        <li id="themeChanger" onClick="changeTheme" style="color: black;">
+            <i class="fa fa-moon"></i>
+        </li>
+<!--
+        <li>
+            
+                <select style="display:hidden;">
+                <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+            </select>
+            <i class="fas fa-bars" aria-hidden="true">
+            </i>
+            
+        </li>
+-->
+    </ul>
+    </nav>
+    <div class="content">
+        <div class="crumbs" style="text-align: left; padding-top: 5px;"><a href="./projects.html"><i class="fad fa-arrow-circle-left"></i>Back</a></div>
+        
+        
+    </div>
+        
+    </div>    
+    
+        
+  
+    <script src="assets/scripts.js"></script>
+    
+  </body>
+      
+</html>

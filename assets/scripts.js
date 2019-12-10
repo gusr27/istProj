@@ -1,6 +1,15 @@
+var json = JSON.parse(json);
 
+function showHref(){
 
-
+   if(window.location.href === "http://127.0.0.1:49550/assets/project.html?military"){
+     // document.title=json.title;
+       document.title=  json.military.title;
+       
+   }else{
+       alert("went wrong");
+   }
+}
 function changeTheme() {
     if(document.getElementById("themeChanger").style.color == "black"){
 document.body.style.backgroundColor = "gray";
