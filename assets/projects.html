@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gus Richardson | A Portfolio</title>
+    <link rel="stylesheet" href="./styles.css"/>
+      <link  rel="stylesheet" href='./FA/css/all.min.css'/>
+      <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto+Slab&display=swap" rel="stylesheet">
+      
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  </head>
+  <body >
+
+    <div id="app">
+      
+        
+         <nav>
+    <ul id="logo">
+        <li >
+         <span class="logo"><a href="../index.html">Gus Richardson</a></span>
+        </li>
+    </ul>
+    <ul class="right" >
+        <li>
+            <a href="../contact.html" >Contact</a>
+        </li>
+        <li>
+            <a href="./projects.html" class="active">Projects</a>
+        </li>
+        <li>
+            About
+        </li>
+        <li id="themeChanger" onClick="changeTheme" style="color: black;">
+            <i class="fa fa-moon"></i>
+        </li>
+<!--
+        <li>
+            
+                <select style="display:hidden;">
+                <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+            </select>
+            <i class="fas fa-bars" aria-hidden="true">
+            </i>
+            
+        </li>
+-->
+    </ul>
+    </nav>
+    <div class="content">
+        <div class="topMenu">
+             <h1>Projects</h1>
+            <div>
+                <a href="#personal"><i class="fad fa-laptop-code fa-5x"></i></a>
+                <a href="#school"><i class="fad fa-school fa-5x"></i></a>
+               <a href="#work"> <i class="fad fa-briefcase fa-5x"></i></a>
+            </div>
+        </div>
+           
+        <section id="personal">
+            <h1>Personal Projects</h1>
+            <h5>Fun things I've worked on from home</h5>
+            <div class="projContent" border="0">
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Compeleted?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/gusr27/militaryRanks" target="_blank">Military Ranks App (React Native)</a></td>
+                            <td>No.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/gusr27/rationalTipping" target="_blank">Tipping App (React Native)</a></td>
+                            <td>No.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/gusr27/Recipe-Box-Pro" target="_blank">Recipe Test App (React)</a></td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                    <p>
+                        Most of these projects are incomplete, as I am still working on them at this time. Feel free to click their names and be sent to their repos on Github!
+                    </p>
+                
+            </div>
+        </section>
+        <section id="school">
+            <h1>School Projects</h1>
+            <h5>Projects I've completed for my college</h5>
+            <div class="projContent">
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Compeleted?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/gusr27/istProj" target="_blank">This website</a></td>
+                            <td><i class="far fa-check"></i></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                    <p>
+                       I have only worked on this website for school.
+                    </p>
+                
+            </div>
+        </section>
+        <section id="work" style="paddingBottom: 20px;">
+            <h1>Professional Projects</h1>
+            <h5>Things I've done for money </h5>
+            <div class="projContent">
+                <i class="fad fa-sad-cry fa-9x" style="margin: auto;"></i>
+                <p>I have not completed any professional projects as of this time. Please <a href="../contact.html">contact me</a> if interested!</p>
+            </div>
+        </section>
+        
+    </div>
+        
+    </div>    
+    
+        
+  
+    <script src="assets/scripts.js"></script>
+    
+  </body>
+      
+</html>
