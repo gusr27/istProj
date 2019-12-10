@@ -9,11 +9,8 @@ function showHref(){
        document.getElementById("completion").innerHTML = json[value].completion;
        document.getElementById("description").innerHTML = json[value].description;
         document.getElementById("link").href = json[value].link;
-       document.getElementById("uses").innerHtml =  json[value].uses;
- 
-    
-   
-}
+        document.getElementById("use").innerHTML = json[value].uses;     
+}    
 function changeTheme() {
     if(document.getElementById("themeChanger").style.color == "black"){
 document.body.style.backgroundColor = "gray";
