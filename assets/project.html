@@ -10,8 +10,6 @@
       <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto+Slab&display=swap" rel="stylesheet">
       <script type="text/javascript" src="projectData.json"></script>
       <script type="text/javascript" src="scripts.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-      <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
       
   </head>
   <body onload="showHref()">
@@ -57,14 +55,22 @@
     <div class="content">
         <div class="crumbs" style="text-align: left; padding-top: 5px;"><a href="./projects.html"><i class="fad fa-arrow-circle-left"></i>Back</a></div>
         
-        
+        <section>
+            <div class="contactForm" style="text-align: left" onsubmit="alertUser()" id="project">
+               <h1 id="projectTitle"></h1>
+                <h3>Uses: <span id="uses"></span></h3>
+                <h5><span id="completion"></span></h5>
+                <h3 style="margin-top:50px;">Description: </h3>
+                <p id="description"></p>
+                <h3 style="margin-top: 50px;">View at: <a href="" id="link" target="_blank"><i class="fab fa-github-alt"></i> Github</a></h3>
+            </div>
+            
+        </section>       
     </div>
         
     </div>    
     
         
-  
-    <script src="assets/scripts.js"></script>
     
   </body>
       

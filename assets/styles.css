@@ -281,7 +281,17 @@ td a{
 td a:hover{
     color: greenyellow;
 }
-
+#project p{
+    margin: 0 10%;
+}
+#project a{
+     margin-top: 100px;
+}
+#project a:hover{
+   
+    color: orange;
+    
+}
 /*
 select{
     

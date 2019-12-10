@@ -1,8 +1,28 @@
 json = {
-    "military":{
-        "title": "Military Ranks",
-        "image": "/images/MR.jpg",
-        "description": "An app that helps study military ranks"
+    military:{
+        title: "Military Ranks",
+        image: "/images/MR.jpg",
+        link:"https://github.com/gusr27/militaryRanks",
+        description: "An app that helps military hopefuls study military ranks. It includes all branches with enlisted and officer ranks. It helps study visually knowning the ranks, and also their heirarchy.",
+        completion: "Unfinished",
+         uses: "React Native, Expo"
+    },
+    tips:{
+         title: "Rational Tipper",
+        image: "/images/MR.jpg",
+        link:"https://github.com/gusr27/rationalTipping",
+        description: "An app I've been working on fun that tries to take the thinking out of tipping. It takes in the experience of the patron and the bill total then puts out a suggested tip based on their experience. ",
+        completion: "Unfinished",
+        uses: "React Naitve, Expo"
+    },
+    recipe:{
+         title: "Recipe Pro App \(Test\)",
+        image: "/images/MR.jpg",
+        link:"https://github.com/gusr27/Recipe-Box-Pro",
+        description: "This is a fairly old project I worked on from FreeCodeCamp when I was self-teaching myself ReactJS. It uses React for the framework and Redux for state management. This also uses a library called sfcookies to save user's recipes locally in a cookie",
+        completion: "Complete",
+        uses: "React, Redux"
     }
+    
     
 }
