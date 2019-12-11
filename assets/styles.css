@@ -1,304 +1,293 @@
-
 #app {
-  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #F64C72;
+-moz-osx-font-smoothing:grayscale;
+-webkit-font-smoothing:antialiased;
+color:#F64C72;
+font-family:'Roboto Slab', Helvetica, Arial, sans-serif;
+margin-top:60px;
+text-align:center;
+}
 
-  margin-top: 60px;
+#homePage {
+background-color:#0C0032;
+left:0;
+position:absolute;
+right:0;
 }
-html{
-    scroll-behavior: smooth;
+
+#leftCol {
+float:left;
 }
-body{
-    margin:0;
-    padding: 0;
-    width: 95%;
-    color: purple;
-    transition: background-color .5s linear;
-    background-color: #282828;
+
+#logo {
+left:0;
+position:absolute;
 }
+
+#logo li:hover,#rightCol,.active:hover,.fa-laptop-code:hover,.fa-briefcase:hover,.fa-school:hover {
+color:#FFF;
+}
+
+#project a {
+margin-top:100px;
+}
+
+#project a:hover {
+color:orange;
+}
+
+#project p {
+margin:0 10%;
+}
+
+#project1:hover {
+transform:rotate(-10deg) scale(1.1);
+transition:transform .3s linear;
+}
+
+#project2:hover {
+transform:scale(1.1);
+transition:transform .3s linear;
+}
+
+#project3:hover {
+transform:rotate(10deg) scale(1.1);
+transition:transform .3s linear;
+}
+
+#projectsDisplay {
+margin:auto;
+text-align:center;
+width:90%;
+}
+
+.active {
+color:#F64C72;
+text-decoration:underline;
+}
+
+.bodyTitle {
+margin-top:50px;
+text-align:center;
+}
+
+.col {
+border:1px solid #ccc;
+height:200px;
+width:50%;
+}
+
+.contactForm {
+background-color:#FFF;
+color:#000;
+height:400px;
+margin-left:auto;
+margin-right:auto;
+margin-top:100px;
+padding-left:20px;
+width:40%;
+}
+
+.contactForm textarea {
+height:30%;
+width:95%;
+}
+
+.content {
+margin:0 auto;
+}
+
+.contentBody {
+height:100%;
+left:0;
+position:absolute;
+right:0;
+width:100%;
+}
+
+.projContent {
+background-color:#242582;
+border:1px solid #000;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+margin-left:30px;
+margin-top:20px;
+min-height:200px;
+min-width:290px;
+overflow:hidden;
+width:50%;
+}
+
+.projContent p {
+font-size:.8rem;
+padding:0 25px;
+text-align:center;
+}
+
+.projContent p a {
+color:purple;
+}
+
+.project {
+background-color:#3500D3;
+display:inline-block;
+height:200px;
+margin:0 10px;
+max-width:300px;
+width:calc(90%/3);
+}
+
+.right {
+color:#FFF;
+float:right;
+margin-right:10px;
+}
+
+.right li,table td,th {
+padding:5px;
+}
+
+.right li:hover,.contactForm h5 {
+color:#F64C72;
+}
+
+.row {
+display:flex;
+margin-left:auto;
+margin-top:100px;
+width:95%;
+}
+
+.topMenu {
+background-color:#242582;
+border:1px solid #000;
+border-radius:10px;
+height:200px;
+margin-left:auto;
+margin-right:auto;
+margin-top:100px;
+overflow:hidden;
+width:50%;
+}
+
+.topMenu > div > a> i {
+margin:0 5%;
+}
+
+.topMenu h1 {
+margin-top:20px;
+}
+
+.topMenu ~ section {
+margin:150px auto 0;
+text-align:left;
+width:75%;
+}
+
 a {
-  text-decoration: none;
-  color: inherit;
-}
-h1,h2,h3,h4,h5,p{
-    margin: 0;
-    padding: 0;
-    
-}
-/*Navigation*/
-nav{
-   position: fixed;
-   width: 100%;
-   top: 0;
-   z-index: 1000;
-   background-color: #0C0032;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 1px;
-    padding: 2px;
-    transition: color .5s linear;
-}
-.right{
-    float: right;
-    margin-right: 10px;
-    color: white;
-
-}
-.right li{
-  padding: 5px;
-}
-.right li:hover{
-  color:#F64C72;
-}
-li:hover{
-    color: red;
-}
-#logo li:hover{
-  color: white;
-}
-/*Main Content*/
-
-.content{
-    margin: 0 auto;
-}
-header{
-    margin-top: 100px;
-    margin-left: auto;
-    width: 95%;
-    text-align: center;
-    min-height: 200px;
-}
-/*Footer*/
-
-/*IDs */
-#logo{
-    position: absolute;
-    left: 0;
+color:inherit;
+text-decoration:none;
 }
 
-header{
-    height: 50%;
-    color: white;
-    text-align: center;
-    padding-bottom: 20px;
-   margin-left: px;
-  }
-  #leftCol{
-    float: left;
-
-  }
-  #rightCol{
-    color: white;
-
-  }
-  .col{
-    width: 50%;
-    height: 200px;
-    border: 1px solid #ccc;
-
-  }
-  .row{
-    display: flex;
-    width: 95%;
-    margin-top: 100px;
-    margin-left: auto;
-  }
-  .bodyTitle{
-    margin-top: 50px;
-    text-align: center;
-  }
-  .contentBody{
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .project{
-    display: inline-block;
-    height: 200px;
-    width: calc(90%/3);
-    max-width: 300px;
-    margin: 0px 10px;
-    background-color: #3500D3;
-  }
-  #homePage{
-    background-color: #0C0032;
-    position: absolute;
-    left:0;
-    right:0;
-  }
-  #projectsDisplay{
-    width: 90%;
-    text-align: center;
-    margin: auto;
-  }
-.active{
-    color: #F64C72;
-    text-decoration: underline;
-}
-.active:hover{
-    color: white;
-}
-.contactForm{
-    margin-top: 100px;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
-    background-color: white;
-    padding-left: 20px;
-    color: black;
-    
-}
-.contactForm h5{
-    color: #F64C72;
-}
-.contactForm textarea{
-    width: 95%;
-    height: 30%;
-}
-form{
-    border: 2px solid #ccc;;
-    
+body {
+background-color:#282828;
+color:purple;
+margin:0;
+padding:0;
+transition:background-color .5s linear;
+width:95%;
 }
 
-form:valid{
+form {
+border:2px solid #ccc;
 }
 
-#project1:hover{
-    transition: transform .3s linear;
-    transform: rotate(-10deg) scale(1.1);
-}
-#project2:hover{
-    transition: transform .3s linear;
-    transform: scale(1.1);
-}
-#project3:hover{
-    transition: transform .3s linear;
-    transform: rotate(10deg) scale(1.1);
-}
-.topMenu{
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 200px;
-    background-color: #242582;
-    border: 1px solid black;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.topMenu h1{
-    margin-top: 20px;
-}
-.topMenu > div > a> i{
-    margin: 0px 5%;
-}
-.fa-laptop-code:hover, .fa-briefcase:hover, .fa-school:hover{
-    color:white;
-}
-.topMenu ~ section{
-    width: 75%;
-    margin: 0 auto;
-    text-align: left;
-}
-.topMenu ~ section{
-    margin-top: 150px;
-}
-h1 + h5{
-    color:white;
-    margin-left: 15px;
-}
-.projContent{
-    margin-top: 20px;
-    margin-left: 30px;
-    width: 50%;
-    min-height: 200px;
-    background-color: #242582;
-    border: 1px solid black;
-    overflow: hidden;
-    border-radius: 10px;
-    min-width: 290px;
-    display: flex;
-    flex-direction: column;
-}
-.projContent p a{
-    color: purple;
-}
-.projContent p{
-    font-size: .8rem;
-    text-align: center;
-    padding: 0 25px;
-}
-table{
-    margin: 10px auto;
-    vertical-align: middle;
-    border-radius: 10px; 
-    overflow: hidden;
-    color: white;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-}
-table td,th{
-    padding: 5px;
-}
-thead{
-    background: #522B72;
-    color: white;
+h1 + h5 {
+color:#FFF;
+margin-left:15px;
 }
 
-td{
-   border: none;
-}
-tr:nth-child(even) {
-  background-color: #553D67;
+h1,h2,h3,h4,h5,p {
+margin:0;
+padding:0;
 }
 
+header {
+color:#FFF;
+height:50%;
+margin-left:px;
+margin-top:100px;
+min-height:200px;
+padding-bottom:20px;
+text-align:center;
+width:95%;
+}
 
-tbody tr:hover{
-    opacity: .5;
+html {
+scroll-behavior:smooth;
 }
-td:nth-child(even){
-    text-align: right;
+
+li:hover {
+color:red;
 }
+
+nav {
+background-color:#0C0032;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+}
+
+nav ul li {
+display:inline-block;
+list-style:none;
+margin:1px;
+padding:2px;
+transition:color .5s linear;
+}
+
+table {
+border:1px solid #000;
+border-collapse:collapse;
+border-radius:10px;
+color:#FFF;
+margin:10px auto;
+overflow:hidden;
+padding:10px;
+vertical-align:middle;
+}
+
+tbody tr:hover {
+opacity:.5;
+}
+
 tbody tr:nth-child(odd) {
-  background-color: #99738E;
- color: black;
-} 
+background-color:#99738E;
+color:#000;
+}
 
+td {
+border:none;
+}
 
+td a {
+text-decoration:none;
+}
 
-td a{
-    text-decoration: none;
+td a:hover {
+color:#ADFF2F;
 }
-td a:hover{
-    color: greenyellow;
+
+td:nth-child(even) {
+text-align:right;
 }
-#project p{
-    margin: 0 10%;
+
+thead {
+background:#522B72;
+color:#FFF;
 }
-#project a{
-     margin-top: 100px;
+
+tr:nth-child(even) {
+background-color:#553D67;
 }
-#project a:hover{
-   
-    color: orange;
-    
-}
-/*
-select{
-    
-    border: none;
-    background: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-     appearance: none;
-    
-}*/
