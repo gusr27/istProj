@@ -4,14 +4,24 @@
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gus Richardson | A Portfolio</title>
-    <link rel="stylesheet" href="./styles.css"/>
-      <link  rel="stylesheet" href='./FA/css/all.min.css'/>
+    <link rel="stylesheet" href="./assets/styles.css"/>
+      <link  rel="stylesheet" href='./assets/FA/css/all.min.css'/>
       <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto+Slab&display=swap" rel="stylesheet">
-      <script src="./scripts.js"></script>
+      <script src="./assets/cripts.js"></script>
        <script type="text/javascript" src="projectData.json"></script>
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
       <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   </head>
+<!--    
+ **this page includes 1 externally hyperlinked page required for the project**
+
+
+ This page is basically a navigation page for my projects. I have stored the project data in a json file, and have a separate
+ project page that will load the data and populate it into the template. I did this to save time and space from building completely
+ different html files for each project, when the all could use the same format to be presented.
+
+
+-->
   <body >
 
     <div id="app">
@@ -25,35 +35,23 @@
     </ul>
     <ul class="right" >
         <li>
-            <a href="../contact.html" >Contact</a>
+            <a href="./contact.html" >Contact</a>
         </li>
         <li>
             <a href="./projects.html" class="active">Projects</a>
         </li>
         <li>
-            <a href="../about.html">About</a>
+            <a href="./about.html">About</a>
         </li>
-        <li id="themeChanger" onClick="changeTheme" style="color: black;">
-            <i class="fa fa-moon"></i>
-        </li>
-<!--
-        <li>
-            
-                <select style="display:hidden;">
-                <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-            </select>
-            <i class="fas fa-bars" aria-hidden="true">
-            </i>
-            
-        </li>
--->
+        
+
     </ul>
     </nav>
     <div class="content">
         <div class="topMenu">
+            <!--  
+                Links here will slow scroll to the part of the page you desire
+            -->
              <h1>Projects</h1>
             <div>
                 <a href="#personal"><i class="fad fa-laptop-code fa-5x"></i></a>
@@ -61,7 +59,12 @@
                <a href="#work"> <i class="fad fa-briefcase fa-5x"></i></a>
             </div>
         </div>
-           
+        <!-- 
+            Tables used here were to list the different projects in each section.
+            I used links inside to send the user to the project pages as well. I 
+            achieved the striped table by using nth-child in css to target every
+            odd and even row and change the color accordingly.
+        -->
         <section id="personal">
             <h1>Personal Projects</h1>
             <h5>Fun things I've worked on from home</h5>
@@ -126,7 +129,7 @@
             <h5>Things I've done for money </h5>
             <div class="projContent">
                 <i class="fad fa-sad-cry fa-9x" style="margin: auto;"></i>
-                <p>I have not completed any professional projects as of this time. Please <a href="../contact.html">contact me</a> if interested!</p>
+                <p>I have not completed any professional projects as of this time. Please <a href="mailto:gzr5103@psu.edu">contact me</a> if interested!</p>
             </div>
         </section>
         

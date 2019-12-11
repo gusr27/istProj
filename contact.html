@@ -11,6 +11,14 @@
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
       <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   </head>
+    <!-- 
+        **this page includes a web form required for the project**
+        
+        This page is a basic contact form page, that requires the user to enter
+        some information before submitting. The form then alerts the user
+        when succesfully "sending" a message. Nothing can be sent from this form, 
+        but it does use a script to grab the name from the form and use it in the alert.
+    -->
   <body >
 
     <div id="app">
@@ -27,14 +35,12 @@
             <a href="./contact.html" class="active">Contact</a>
         </li>
         <li>
-            <a href="./assets/projects.html">Projects</a>
+            <a href="./projects.html">Projects</a>
         </li>
         <li>
             <a href="./about.html">About</a>
         </li>
-        <li id="themeChanger" onClick="changeTheme" style="color: black;">
-            <i class="fa fa-moon"></i>
-        </li>
+        
     </ul>
     </nav>
     <div class="content">
@@ -54,6 +60,9 @@
                 
                 </textarea>
                 <br/><br/>
+                <!--
+                    Submitting sends the name to the scripts file so it can be used in an alert
+                -->
                 <input type="submit" value="Submit"/>
             </form>
         </section>       

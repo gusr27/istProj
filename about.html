@@ -12,7 +12,12 @@
       <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   </head>
   <body >
+      <!--
+        **This page has 4 of the images locally sourced in this project.**
+        **This page has 2 of the externally hyperlinked pages in this project**
 
+        This page overall is just a simple 'About' page using a two column layout. 
+      -->
     <div id="app">
       
         
@@ -27,15 +32,13 @@
             <a href="./contact.html" >Contact</a>
         </li>
         <li>
-            <a href="./assets/projects.html">Projects</a>
+            <a href="./projects.html">Projects</a>
         </li>
         <li>
             <a href="./about.html" class="active">About</a>
             
         </li>
-        <li id="themeChanger" onClick="changeTheme" style="color: black;">
-            <i class="fa fa-moon"></i>
-        </li>
+        
     </ul>
     </nav>
     <div class="content">
@@ -43,6 +46,12 @@
             <div id="aboutHeader">
                 <div class="header"></div>
                 <div class="bottomLeft">
+                    <!--
+                        Used a blur filter to get the frosted glass
+                        look I wanted for this title. I originally
+                        had the whole background image blurred, but
+                        it was too hard to read in my opinion.
+                    -->
                     <h1>Philadelphia Born and Raised</h1>
                 </div>
             </div>
@@ -53,6 +62,13 @@
                 </div>
                 
                 <div>
+                    <!--                    
+                        Floated the list to the left to use a two column
+                        layout with a left menu and content on the right.
+
+                        List items highlight white to show what you're highlighting
+                        while links themselves highlight orange to show they're clickable.
+                    -->
                     <ul style="margin-top: 20px; text-align: left">
                         <li>
                             College: Penn State 
@@ -61,17 +77,24 @@
                             Current City: Philadelphia
                         </li>
                         <li>
-                            LinkedIn: <a href="linkedin.com/gusrichardson8"><i class="fab fa-linkedin fa-2x"></i></a>
+                            LinkedIn: <a href="http://www.linkedin.com/in/gusrichardson27" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                         </li>
                         <li>
-                            Github: <a href="github.com/gusr27"><i class="fab fa-github-alt fa-2x"></i></a>
+                            Github: <a href="http://www.github.com/gusr27" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
                         </li> 
                         <li>
+                            Email: <a href="mailto:gzr5103@psu.edu"><i class="fad fa-envelope fa-2x"></i></a>
                         </li>
                         
                     </ul>
                     <div class="aboutText">
-                        
+                        <!--
+                            I admittedly had more trouble than it was really worth
+                            putting the images in this text. I put them in and floated
+                            them left and right so the text could wrap around it, added some 
+                            margin for clarity purposes, and made sure the words broke as a
+                            whole in the css using word-break keep all. 
+                        -->
                          <p style="text-align: left; ">
                              <img src="assets/images/psu.png" alt="Penn State Nittany Lion Logo" title="Penn State Nittany Lion" height="100px" style="float: right; margin-left: 10px;"/>
                             I'm currently a student at Penn State studying Risk and Security Analysis with a focus in Cybersecurity. I have been studying ethical hacking, web design, and web based applications for over 3 years now. I have some experience in creating applications in ReactJS, AngularJS,<img src="assets/images/dub.jpg" alt="Dubrovnik, Croatia" title="Dubrovnik, Croatia" height="140px" style="float: left; border-radius: 0; margin-right: 10px "/> and VueJS along with mobile application frameworks like React Native and Expo. I will be graduating from Penn State at the end of 2020, so I am actively searching for projects and places to work to get more experience. Based out of Philadelphia,  I have look at opportunities in many places from New York to Washington D.C. My dream is to do security work for the government, but in the meantime I will be traveliing to Dubrovnik, Croatia to continue my information security studies and to gather more experience working with others from around the globe. 

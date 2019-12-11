@@ -5,13 +5,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script type="text/javascript" language="javascript" src="./projectData.json"></script>
     <title></title>
-    <link rel="stylesheet" href="./styles.css"/>
-      <link  rel="stylesheet" href='./FA/css/all.min.css'/>
+    <link rel="stylesheet" href="./assets/styles.css"/>
+      <link  rel="stylesheet" href='./assets/FA/css/all.min.css'/>
       <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto+Slab&display=swap" rel="stylesheet">
-      <script type="text/javascript" src="projectData.json"></script>
-      <script type="text/javascript" src="scripts.js"></script>
+      <script type="text/javascript" src="./assets/projectData.json"></script>
+      <script type="text/javascript" src="./assets/scripts.js"></script>
       
   </head>
+    <!--  
+        **when loaded this page will contain 3 of the external hyperlinks for this project**
+        
+        This a basic template page that will fill in with data from a json file. 
+        It needs to be accessed when clicking on one of my links from the projects
+        page, since that is how the scripts I use get what data to use. It does it
+        by snipping the end of the url and using that to know which project to load 
+        in.
+    -->
   <body onload="showHref()">
 
     <div id="app">
@@ -33,30 +42,27 @@
         <li>
             <a href="../about.html">About</a>
         </li>
-        <li id="themeChanger" onClick="changeTheme" style="color: black;">
-            <i class="fa fa-moon"></i>
-        </li>
-<!--
-        <li>
-            
-                <select style="display:hidden;">
-                <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-            </select>
-            <i class="fas fa-bars" aria-hidden="true">
-            </i>
-            
-        </li>
--->
+        
+
     </ul>
     </nav>
     <div class="content">
-        <div class="crumbs" style="text-align: left; padding-top: 5px;"><a href="./projects.html"><i class="fad fa-arrow-circle-left"></i>Back</a></div>
+        <div class="crumbs" style="text-align: left; padding-top: 5px;"><a href="./projects.html"><i class="fad fa-arrow-circle-left">
+            
+        <!--
+            This is the only time I have a back button 
+            or any sort of breadcrumbs for navigation.
+            This is mostly because the other pages could be navigated back
+            to from the navbar, but also because of time constraints.
+        -->
+        </i>Back</a></div>
         
         <section>
-            <div class="contactForm" style="text-align: left" onsubmit="alertUser()" id="project">
+            <!--
+                All the IDs are marking in the DOM where the scripts should load
+                each part of the project saved in the json file.
+            -->
+            <div class="contactForm" style="text-align: left"  id="project">
                <h1 id="projectTitle"></h1>
                 <h4>Uses: <span id="use"></span></h4>
                 <h5><span id="completion"></span></h5>

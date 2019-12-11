@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="./assets/styles.css"/>
       <link  rel="stylesheet" href='./assets/FA/css/all.min.css'/>
       <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto+Slab&display=swap" rel="stylesheet">
-      
+      <script type="text/javascript" src="assets/scripts.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
       <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   </head>
+    <!--
+        **this page includes 1 of the locally sources images**
+
+        This welcome page uses a simple layout to welcome the user and give some simple navigation
+        to get around to the different parts of the site.
+
+        Full disclosure to whomever reads this, this site started out as a VueJS single page
+        web application, because I like that framework and have experience with it. However,
+        this project is mostly for a vanilla based HTML and CSS website, so I had to lose the single page
+        functionality by switching it over. This is an explanation for why there might be some remnants of
+        the VueJS code, like the id name app on all the body content in the website.
+
+        There are a couple pages in my assets folder that really shouldn't, but because of that mistake I had already
+        wrote the navs to include those paths.
+    -->
   <body >
 
     <div id="app">
@@ -23,16 +38,18 @@
         </li>
     </ul>
     <ul class="right" >
+        <!-- Used CSS transitions to let the links slowly change color when hovered over       -->
         <li>
             <a href="./contact.html">Contact</a>
         </li>
         <li>
-           <a href="./assets/projects.html">Projects</a>
+           <a href="./projects.html">Projects</a>
         </li>
         <li>
             <a href="./about.html" >About</a>
         </li>
-        <li id="themeChanger" onClick="changeTheme" style="color: black;">
+        <!--   Just for fun, this button will change the background color of the body of the page     -->
+        <li id="themeChanger" onClick="changeTheme()" style="color: black;">
             <i class="fa fa-moon"></i>
         </li>
     </ul>
@@ -40,8 +57,14 @@
     <div class="content">
         <div id="homePage" >
     
-        <img src="assets/images/iconfinder_male3_403019.png" height="100px" style="margin-top: 20px;"/>
+        <img src="assets/images/iconfinder_male3_403019.png" alt="Cartoon Man Logo" title="Cartoon Man"height="100px" style="margin-top: 20px;"/>
         <h1>Welcome to my site!</h1>
+        <!--
+            Semi-fake because I have projects I have done I would
+            put in a portfolio, but for simplicity have not 
+            on this site since I would rather use a more complex
+            framework to display my work.
+        -->
         <h3>This is my <em>semi-fake</em> portfolio</h3>
     
     <section>
@@ -49,9 +72,13 @@
         <div class="contentBody">
           <div class="bodyTitle">
               <h1> - Find Out More - </h1>
+              <!--
+                Using CSS animations, I was able to animate each box to have its own distinctive animation 
+                when hovered over. 
+              -->
               <div id="projectsDisplay">
                   <div id="project1" class="project">
-                      <a href="./assets/projects.html">
+                      <a href="./projects.html">
                           <i class="fad fa-code fa-7x"></i>
                           <h2>Check out my projects!</h2>
                       </a>
