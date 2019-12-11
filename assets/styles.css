@@ -1,3 +1,19 @@
+#aboutHeader {
+margin:100px auto 0;
+position:relative;
+width:90%;
+z-index:0;
+}
+
+#aboutHeader .header {
+background:url(./images/philly.jpg) no-repeat;
+background-position:0 30%;
+background-size:cover;
+box-shadow:0 1px 1px #000;
+min-height:200px;
+width:100%;
+}
+
 #app {
 -moz-osx-font-smoothing:grayscale;
 -webkit-font-smoothing:antialiased;
@@ -23,7 +39,7 @@ left:0;
 position:absolute;
 }
 
-#logo li:hover,#rightCol,.active:hover,.fa-laptop-code:hover,.fa-briefcase:hover,.fa-school:hover {
+#logo li:hover,#rightCol,.active:hover,.fa-laptop-code:hover,.fa-briefcase:hover,.fa-school:hover,.aboutBody ul li:hover {
 color:#FFF;
 }
 
@@ -31,7 +47,7 @@ color:#FFF;
 margin-top:100px;
 }
 
-#project a:hover {
+#project a:hover,.aboutBody ul li a:hover {
 color:orange;
 }
 
@@ -60,6 +76,37 @@ text-align:center;
 width:90%;
 }
 
+.aboutBody {
+background-color:#25267d;
+color:inherit;
+margin:0 auto;
+min-height:800px;
+position:relative;
+width:90%;
+}
+
+.aboutBody img {
+border-radius:50%;
+float:left;
+margin-top:10px;
+}
+
+.aboutBody ul {
+clear:both;
+color:inherit;
+float:left;
+list-style:none;
+}
+
+.aboutText {
+float:right;
+font-weight:600;
+line-height:2;
+margin-top:20px;
+width:75%;
+word-break:keep-all;
+}
+
 .active {
 color:#F64C72;
 text-decoration:underline;
@@ -68,6 +115,17 @@ text-decoration:underline;
 .bodyTitle {
 margin-top:50px;
 text-align:center;
+}
+
+.bottomLeft {
+backdrop-filter:blur(5px);
+background-color:rgba(255,255,255,.15);
+border:4px solid #3500D3;
+bottom:10px;
+color:#FFF;
+left:16px;
+padding:5px;
+position:absolute;
 }
 
 .col {
@@ -93,6 +151,7 @@ width:95%;
 }
 
 .content {
+height:100%;
 margin:0 auto;
 }
 
@@ -133,13 +192,13 @@ background-color:#3500D3;
 display:inline-block;
 height:200px;
 margin:0 10px;
-padding-top: 10px;
 max-width:300px;
+padding-top:10px;
 width:calc(90%/3);
 }
-.project h2{
-    padding-top: 10px;
-    
+
+.project h2 {
+padding-top:10px;
 }
 
 .right {
@@ -161,6 +220,17 @@ display:flex;
 margin-left:auto;
 margin-top:100px;
 width:95%;
+}
+
+.topBody {
+height:100px;
+width:100%;
+}
+
+.topBody h1 {
+position:relative;
+text-decoration:underline;
+top:50%;
 }
 
 .topMenu {
@@ -212,7 +282,7 @@ color:#FFF;
 margin-left:15px;
 }
 
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h4,h5,p,figure {
 margin:0;
 padding:0;
 }
