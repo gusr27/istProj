@@ -133,8 +133,13 @@ background-color:#3500D3;
 display:inline-block;
 height:200px;
 margin:0 10px;
+padding-top: 10px;
 max-width:300px;
 width:calc(90%/3);
+}
+.project h2{
+    padding-top: 10px;
+    
 }
 
 .right {
